@@ -1,5 +1,5 @@
 body,html {
-    background-color: #240070;
+    background-color: #273C54;
     font-family: 'Gidole';
     width: 100%;
     height:100%;
@@ -44,17 +44,27 @@ body,html {
 #center-logo {
     margin: auto;
     width:180px;
+    border-radius: 50%;
 
 }
 
 #get-started {
     text-align: center;
     text-decoration: none;
-    color:#240070;
+    color:black;
     background-color: whitesmoke;
     width: 6%;
     border-radius: 25px;
     padding:1%;
+}
+
+#github-icon {
+    width:100%;
+}
+
+#github-link {
+    margin-top: .5%;
+    width:2%;
 }
 
 @media only screen and (max-width: 768px) {

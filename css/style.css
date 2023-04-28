@@ -1,79 +1,142 @@
-body,html {
-    background-color: #273C54;
-    font-family: 'Gidole';
-    width: 100%;
-    height:100%;
-    margin:0;
+body,
+html {
+  background-color: #273c54;
+  font-family: 'Gidole';
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
-    font-family: 'Gidole';
-    src: url('../fonts/Gidole-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Gidole';
+  src: url('../fonts/Gidole-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
+@font-face {
+  font-family: 'roc-grotesk';
+  src: url('../fonts/Roc-Grotesk-Bold.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
 #wrapper {
-    width: 99%;
-    height: 99%;
-    margin:1%
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 1%;
+  display: grid;
+  grid-template-rows: 4em 1fr 2em;
+  box-sizing: border-box;
 }
 
 #navbar {
-    display: flex;
-    gap:2%;
+  width: 98%;
+  display: flex;
+  gap: 4%;
+  align-items: center;
+  justify-content: left;
+}
+
+#logo {
+  margin: 0;
+  height: 100%;
+  max-width: 100%;
 }
 
 .navbar-link {
-    text-decoration: none;
-    color:whitesmoke
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.navbar-link:hover {
+  color: #edd464;
 }
 
 #main-content {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    color:whitesmoke;
-    align-items: center;
+  text-align: center;
+  color: whitesmoke;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4%;
 }
+
+#name-div {
+  height: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #name {
-    font-size: 700%;
-    margin:0
+  font-size: 8em;
+  margin: 0;
+  font-family: 'roc-grotesk';
 }
 
-#center-logo {
-    margin: auto;
-    width:180px;
-    border-radius: 50%;
-
+#description {
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  color: #edd464;
 }
 
 #get-started {
-    text-align: center;
-    text-decoration: none;
-    color:black;
-    background-color: whitesmoke;
-    width: 6%;
-    border-radius: 25px;
-    padding:1%;
+  text-align: center;
+  text-decoration: none;
+  color: #273c54;
+  background-color: whitesmoke;
+  width: 6%;
+  border-radius: 25px;
+  padding: 1%;
 }
 
-#github-icon {
-    width:100%;
+#get-started:hover {
+  background-color: #edd464;
+}
+
+#bottomBar {
+  bottom: 1%;
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
 }
 
 #github-link {
-    margin-top: .5%;
-    width:2%;
+  height: 100%;
+  width: 2em;
+}
+
+#github-icon {
+  margin: 0;
+  height: 100%;
+  background-size: contain;
+  background-image: url('../images/github-mark-white.png');
 }
 
 @media only screen and (max-width: 768px) {
-    #get-started {
-        padding:4%;
-        width:fit-content;
-    }
-    #name {
-        font-size:400%;
-    }
-
+  #get-started {
+    padding: 4%;
+    width: fit-content;
+  }
+  #name {
+    font-size: 3em;
+  }
+  #name-div {
+    height: 2em;
+  }
+  #description {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  #main-content {
+    gap: 2%;
+  }
 }

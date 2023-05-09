@@ -1,40 +1,54 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>LibreCheats</title>
-    <link rel="stylesheet" href="css/projects.css">
-    <link rel="icon" type="image/png" href="images/LibreCheats_Logo.png">
+    <link rel="stylesheet" href="css/projects.css" />
+    <link rel="icon" type="image/png" href="images/LibreCheats_Logo.png" />
     <link href="css/prism.css" rel="stylesheet" />
-</head>
-</head>
-<body>
+  </head>
+  <body>
     <div id="wrapper">
-        <div id="navbar">
-            <a href="index.html" class="navbar-link">Home</a>
-            <a href="projects.html" class="navbar-link">Projects</a>
-            <a href="contact.html" class="navbar-link">Contact</a>
+      <div id="navbar">
+        <a href="index.html" class="navbar-link">Home</a>
+        <a href="projects.html" class="navbar-link">Projects</a>
+        <a href="contact.html" class="navbar-link">Contact</a>
+      </div>
+      <div id="projects">
+        <div id="title-bar">
+          <h1 id="projects-header">Projects</h1>
+          <div id="instructions">
+            <p>
+              Drag the Drag Me! button to your bookmarks bar and click on it
+              while on associated website to use.
+            </p>
+          </div>
         </div>
-        <div id="projects">
-            <div id="title-bar">
-                <img src="images/LibreCheats_Logo.png" id="logo"/>
-                <h1 id="projects-header">LibreCheats<br>Projects</h1>    
-            </div>
-            <a href="projects/edpuzzle.html">
-                <div class="project">
-                    <img class="project-image" src="images/ed_puzzle.png"/>
-                    <a class="project-bookmarklet" href='javascript: document.dev_env = "https://edpuzzle-beta.hs.vc"; fetch("https://edpuzzle-beta.hs.vc/script.js").then(r => r.text()).then(r => eval(r))'>Drag Me!</a>
-                    <p class="project-instructions">Drag the above button to your bookmarks bar, then click it while on your edpuzzle assignment!</p>
-                </div>
-                <a href="projects/kahoot.html">
-                    <div class="project">
-                        <img class="project-image" src="images/kahoot.jpeg">
-                        <a class="project-bookmarklet" href="placeholder">Drag Me!</a>
-                        <p class="project-instructions">Drag the above button to your bookmarks bar, then click it while on your edpuzzle assignment!</p>
-                    </div>
-                </a>
-            </a>
-        </div>    
+        <div class="divider"></div>
+        <div class="project">
+          <a href="projects/edpuzzle.html">
+            <img class="project-image" src="images/ed_puzzle.png"
+          /></a>
+          <p class="project-description">
+            Allows you to skip videos, auto-answer individual/all questions,
+            aswell as use AI to solve open-ended questions.
+          </p>
+          <a
+            class="project-bookmarklet"
+            href='javascript: document.dev_env = "https://edpuzzle-beta.hs.vc"; fetch("https://edpuzzle-beta.hs.vc/script.js").then(r => r.text()).then(r => eval(r))'
+            >Drag Me!</a
+          >
+        </div>
+        <div class="divider"></div>
+        <div class="project">
+          <a href="projects/kahoot.html">
+            <img class="project-image" src="images/kahoot.jpeg"
+          /></a>
+          <p class="project-description">Still in devolpment.</p>
+          <a class="project-bookmarklet" href="placeholder">Drag Me!</a>
+        </div>
+        <div class="divider"></div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

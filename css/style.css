@@ -2,10 +2,11 @@ body,
 html {
   background-color: #273c54;
   font-family: 'Gidole';
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -32,14 +33,14 @@ html {
 }
 
 #navbar {
-  width: 98%;
+  width: 100%;
   display: flex;
   gap: 4%;
   align-items: center;
-  justify-content: left;
+  justify-content: space-evenly;
 }
 
-#logo {
+.logo {
   margin: 0;
   height: 100%;
   max-width: 100%;

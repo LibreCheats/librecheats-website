@@ -41,9 +41,9 @@ html {
 }
 
 .logo {
-  margin: 0;
-  height: 100%;
-  max-width: 100%;
+  margin: 24px;
+  height: 120%;
+  max-width: 120%;
 }
 
 .navbar-link {
@@ -61,11 +61,17 @@ html {
   text-align: center;
   color: whitesmoke;
   height: 100%;
-  display: flex;
-  justify-content: center;
+  display: grid;
   align-items: center;
+  justify-content: center;
+}
+
+#left-div {
+  display: flex;
+  justify-content: left;
   flex-direction: column;
-  gap: 4%;
+  text-align: left;
+  row-gap: 8px;
 }
 
 #name-div {
@@ -93,9 +99,15 @@ html {
   text-decoration: none;
   color: #273c54;
   background-color: whitesmoke;
-  width: 6%;
   border-radius: 25px;
-  padding: 1%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 14px;
+  padding-right: 14px;
+  width: max-content;
+  height: min-content;
+  justify-self: center;
+  margin-top: 8px;
 }
 
 #get-started:hover {

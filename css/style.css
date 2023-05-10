@@ -159,4 +159,10 @@ html {
   #main-content {
     gap: 2%;
   }
+  .logo {
+    height: 180%;
+    max-width: 180%;
+    margin-left:8px;
+    margin-bottom: 30px;
+  }
 }

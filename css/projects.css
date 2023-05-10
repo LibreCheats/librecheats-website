@@ -111,8 +111,11 @@ html {
 
 .project-image {
   width: 50%;
-  border-radius: 25px;
   margin: 0;
+}
+
+.curved-border {
+  border-radius: 25px;
 }
 
 .project-description {
@@ -136,10 +139,7 @@ html {
   color: #273c54;
   background-color: whitesmoke;
   border-radius: 25px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding: 16px 14px 16px 14px;
   width: max-content;
   height: min-content;
   justify-self: center;

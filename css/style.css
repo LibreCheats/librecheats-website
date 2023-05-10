@@ -119,9 +119,10 @@ html {
   display: flex;
   align-items: center;
   justify-content: left;
+  gap: 8px;
 }
 
-#github-link {
+.social-link {
   height: 100%;
   width: 2em;
 }
@@ -131,6 +132,16 @@ html {
   height: 100%;
   background-size: contain;
   background-image: url('../images/github-mark-white.png');
+}
+
+#discord-icon {
+  margin: 0;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-image: url('../images/discord-mark-white.png');
 }
 
 @media only screen and (max-width: 768px) {
